@@ -1,4 +1,4 @@
-FROM strapi/strapi:3.4-alpine
+FROM strapi/strapi:3.5.3
 
 EXPOSE 1337
 
