@@ -1,7 +1,7 @@
-FROM strapi/strapi:3.5.3
-
+FROM strapi/strapi:3.5.4
+WORKDIR /app
+COPY . . 
+RUN yarn
+RUN yarn run build
 EXPOSE 1337
-
-RUN npm run build
-
 CMD ["strapi", "start"]
