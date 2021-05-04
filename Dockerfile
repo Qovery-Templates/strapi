@@ -1,4 +1,4 @@
-FROM strapi/strapi:3.5.4
+FROM strapi/strapi:latest
 WORKDIR /app
 COPY . . 
 RUN yarn
