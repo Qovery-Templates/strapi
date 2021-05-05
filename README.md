@@ -33,5 +33,17 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
         }
       ```
         
-4. Push the changes on your remote branch
-5. Wait for Qovery to deploy your app 8)
+4. Open a terminal with path set to strapi-app folder
+5. Run one of the following command:
+
+      ```bash
+      yarn add mysql
+      ```
+      
+      or
+      
+      ```bash
+      npm i mysql
+      ```
+6. Push the changes on your remote branch
+7. Wait for Qovery to deploy your app 8)
