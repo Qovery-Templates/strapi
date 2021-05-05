@@ -1,11 +1,16 @@
 # Qovery Strapi Template
 
-
 Welcome to the Qovery Strapi template guide. In the next lines, you'll see how to initialize a strapi application in the environment setup by Qovery.
 
-### Setting things up
+Before you begin, this guide assumes you have create a Strapi app with Qovery's template and have MySQL 8 running locally.
 
-Before you begin, this guide assumes you have create a Strapi app with Qovery's template and have MySQL installed locally.
+#### Hint
+You can run a mysql db with the followin command:
+```bash
+docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=strapi -e MYSQL_PASSWORD=strapi -p 3306:3306 mysql:8
+```
+
+### Setting things up
 
 1. Clone the repository created by Qovey
 2. Initialize Strapi in the project cloned with one of the following command:
