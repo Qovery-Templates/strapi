@@ -12,9 +12,9 @@ application:
       size: 5GB
       mount_point: /srv/app
 databases:
-- type: postgresql
-  version: 12
-  name: my-psql
+- type: mysql
+  version: 8
+  name: my-sql
 routers:
 - name: main
   routes:
