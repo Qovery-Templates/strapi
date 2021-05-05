@@ -20,5 +20,16 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
   
         COPY ./<my-project> .
         
-4. Push the changes on your remote branch
-5. Wait for Qovery to deploy your app 8)
+4. Edit <my-project>/config/database.js to have:
+
+        settings: {
+        client: env("DATABASE_CLIENT", "mysql"),
+        host: env("DATABASE_HOST", "0.0.0.0"),
+        port: env.int("DATABASE_PORT", 3306),
+        database: env("DATABASE_NAME", "strapi"),
+        username: env("DATABASE_USERNAME", "strapi"),
+        password: env("DATABASE_PASSWORD", "strapi"),
+        }
+        
+6. Push the changes on your remote branch
+7. Wait for Qovery to deploy your app 8)
