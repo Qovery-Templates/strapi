@@ -11,11 +11,11 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
 2. Initialize Strapi in the project cloned with one of the following command:
 
       ```bash
-      yarn create strapi-app <my-project> --quickstart
+      yarn create strapi-app strapi-app --quickstart
       
       OR
       
-      npx create-strapi-app <my-project> --quickstart
+      npx create-strapi-app strapi-app --quickstart
       ```
         
 3. Edit strapi-app/config/database.js to have:
