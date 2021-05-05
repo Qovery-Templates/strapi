@@ -24,12 +24,12 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
 
       ```js
         settings: {
-        client: env("DATABASE_CLIENT", "mysql"),
-        host: env("DATABASE_HOST", "0.0.0.0"),
-        port: env.int("DATABASE_PORT", 3306),
-        database: env("DATABASE_NAME", "strapi"),
-        username: env("DATABASE_USERNAME", "strapi"),
-        password: env("DATABASE_PASSWORD", "strapi"),
+            client: env("DATABASE_CLIENT", "mysql"),
+            host: env("DATABASE_HOST", "0.0.0.0"),
+            port: env.int("DATABASE_PORT", 3306),
+            database: env("DATABASE_NAME", "strapi"),
+            username: env("DATABASE_USERNAME", "strapi"),
+            password: env("DATABASE_PASSWORD", "strapi"),
         }
       ```
         
