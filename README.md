@@ -12,9 +12,11 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
 
       ```bash
       yarn create strapi-app strapi-app --quickstart
+      ```
       
-      OR
+      or
       
+      ```bash
       npx create-strapi-app strapi-app --quickstart
       ```
         
