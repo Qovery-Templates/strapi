@@ -10,18 +10,17 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
 1. Clone the repository created by Qovey
 2. Initialize Strapi in the project cloned with one of the following command:
 
-        yarn create strapi-app <my-project> --quickstart
-  
-      or
-    
-        npx create-strapi-app <my-project> --quickstart
-    
-3. Edit Dockerfile in order to have the path of the project initilized instead of 
-  
-        COPY ./<my-project> .
+      ```bash
+      yarn create strapi-app <my-project> --quickstart
+      
+      OR
+      
+      npx create-strapi-app <my-project> --quickstart
+      ```
         
-4. Edit < my-project >/config/database.js to have:
+3. Edit strapi-app/config/database.js to have:
 
+      ```js
         settings: {
         client: env("DATABASE_CLIENT", "mysql"),
         host: env("DATABASE_HOST", "0.0.0.0"),
@@ -30,6 +29,7 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
         username: env("DATABASE_USERNAME", "strapi"),
         password: env("DATABASE_PASSWORD", "strapi"),
         }
+      ```
         
-6. Push the changes on your remote branch
-7. Wait for Qovery to deploy your app 8)
+4. Push the changes on your remote branch
+5. Wait for Qovery to deploy your app 8)
