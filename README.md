@@ -14,14 +14,9 @@ Welcome to the Qovery Strapi template guide. In the next lines, you'll see how t
     
         npx create-strapi-app <my-project> --quickstart
     
-3. Edit Dockerfile in order to have
-
-    
-        COPY ./<my-project> . 
+3. Edit Dockerfile in order to have the path of the project initilized instead of 
   
-      instead of 
-  
-        COPY . .
+        COPY ./<my-project> .
         
 4. Push the changes on your remote branch
 5. Wait for Qovery to deploy your app 8)
