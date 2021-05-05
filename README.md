@@ -45,5 +45,5 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
       ```bash
       npm i mysql
       ```
-6. Push the changes on your remote branch
+6. Push all the changes on your remote branch
 7. Wait for Qovery to deploy your app 8)
