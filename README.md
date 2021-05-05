@@ -5,7 +5,7 @@ Welcome to the Qovery Strapi template guide. In the next lines, you'll see how t
 
 ### Setting things up
 
-Before you begin, this guide assumes you have create a Strapi app with Qovery's template.
+Before you begin, this guide assumes you have create a Strapi app with Qovery's template and have MySQL installed locally.
 
 1. Clone the repository created by Qovey
 2. Initialize Strapi in the project cloned with one of the following command:
