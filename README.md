@@ -20,7 +20,7 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
   
         COPY ./<my-project> .
         
-4. Edit <my-project>/config/database.js to have:
+4. Edit < my-project >/config/database.js to have:
 
         settings: {
         client: env("DATABASE_CLIENT", "mysql"),
