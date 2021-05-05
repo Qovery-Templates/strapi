@@ -1,4 +1,4 @@
-FROM strapi/strapi:3.5.4
+FROM strapi/strapi:3.6.1
 WORKDIR /app
 COPY ./<my-project> .  # EDIT ME !
 COPY .env .env
