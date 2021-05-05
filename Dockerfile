@@ -1,6 +1,6 @@
 FROM strapi/strapi:3.5.4
 WORKDIR /app
-COPY ./<my-project> .  # EDIT ME !
+COPY ./strapi-app .  # EDIT ME !
 COPY .env .env
 RUN yarn
 RUN yarn run build
