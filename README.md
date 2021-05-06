@@ -50,5 +50,11 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=strapi -e MYS
       ```bash
       npm i mysql
       ```
-6. Push all the changes on your remote branch
-7. Wait for Qovery to deploy your app 8)
+      
+6. Run the project locally with 
+      ```bash
+      yarn run develop
+      ```
+8. Create your admin user at localhost:1337/admin
+9. Push all the changes on your remote branch
+10. Wait for Qovery to deploy your app 8)
