@@ -7,7 +7,7 @@ Before you begin, this guide assumes you have create a Strapi app with Qovery's 
 #### Hint
 You can run a mysql db with the followin command:
 ```bash
-docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=strapi -e MYSQL_PASSWORD=strapi -p 3306:3306 mysql:8
+docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
 ```
 
 ### Setting things up
@@ -30,7 +30,7 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=strapi -e MYS
       ```js
         settings: {
             client: env("DATABASE_CLIENT", "mysql"),
-            host: env("DATABASE_HOST", "0.0.0.0"),
+            host: env("DATABASE_HOST", "localhost"),
             port: env.int("DATABASE_PORT", 3306),
             database: env("DATABASE_NAME", "strapi"),
             username: env("DATABASE_USERNAME", "strapi"),
