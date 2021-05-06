@@ -25,7 +25,7 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
       npx create-strapi-app strapi-app --quickstart
       ```
         
-3. Edit strapi-app/config/database.js to have:
+3. Edit **settings part** in *strapi-app/config/database.js* to have:
 
       ```js
         settings: {
@@ -55,6 +55,6 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
       ```bash
       yarn run develop
       ```
-8. Create your admin user at localhost:1337/admin
+8. Create your admin user at http://localhost:1337/admin
 9. Push all the changes on your remote branch
 10. Wait for Qovery to deploy your app 8)
