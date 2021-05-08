@@ -25,9 +25,9 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
       npx create-strapi-app strapi-app --quickstart --no-run
       ```
         
-3. Create new subfolders in `./config` like so: `/env/production/`, then create a new `database.js`
-4. Be sure that your path match the following: `./config/env/production/database.js`
-5. Edit **settings object** in `strapi-app/config/env/production/database.js` to have:
+3. Create new subfolders in `./strapi-app/config` like so: `/env/production/`, then create a new `database.js`
+4. Be sure that your path match the following: `./strapi-app/config/env/production/database.js`
+5. Edit **settings object** in `./strapi-app/config/env/production/database.js` to have:
 
       ```js
         settings: {
