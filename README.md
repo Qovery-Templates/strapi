@@ -12,20 +12,22 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
 
 ### Setting things up
 
-1. Clone the repository created by Qovey
+1. Clone the repository created by Qovery
 2. Initialize Strapi in the project cloned with one of the following command:
 
       ```bash
-      yarn create strapi-app strapi-app --quickstart
+      yarn create strapi-app strapi-app --quickstart --no-run
       ```
       
       or
       
       ```bash
-      npx create-strapi-app strapi-app --quickstart
+      npx create-strapi-app strapi-app --quickstart --no-run
       ```
         
-3. Edit **settings part** in *strapi-app/config/database.js* to have:
+3. Create new subfolders in `./strapi-app/config` like so: `/env/production/`, then create a new `database.js`
+4. Be sure that your path match the following: `./strapi-app/config/env/production/database.js`
+5. Edit **settings object** in `./strapi-app/config/env/production/database.js` to have:
 
       ```js
         settings: {
@@ -38,8 +40,8 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
         }
       ```
         
-4. Open a terminal with path set to strapi-app folder
-5. Run one of the following command:
+6. Open a terminal with path set to strapi-app folder
+7. Run one of the following command:
 
       ```bash
       yarn add mysql
@@ -51,9 +53,9 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
       npm i mysql
       ```
       
-6. Run the project locally with 
+8. Run the project locally with 
       ```bash
-      yarn run develop
+      yarn develop
       ```
       
       or
@@ -62,6 +64,6 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
       npm run develop
       ```
       
-8. Create your admin user at http://localhost:1337/admin
-9. Push all the changes on your remote branch
-10. Wait for Qovery to deploy your app 8)
+9. Create your admin user at http://localhost:1337/admin
+10. Push all the changes on your remote branch
+11. Wait for Qovery to deploy your app
