@@ -31,7 +31,7 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
 
       ```js
         settings: {
-            client: env("DATABASE_CLIENT", "mysql"),
+            client: env("DATABASE_CLIENT", "mysql2"),
             host: env("DATABASE_HOST", "localhost"),
             port: env.int("DATABASE_PORT", 3306),
             database: env("DATABASE_NAME", "strapi"),
@@ -44,13 +44,13 @@ docker run --name strapi -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8
 7. Run one of the following command:
 
       ```bash
-      yarn add mysql
+      yarn add mysql2
       ```
       
       or
       
       ```bash
-      npm i mysql
+      npm i mysql2
       ```
       
 8. Run the project locally with 
